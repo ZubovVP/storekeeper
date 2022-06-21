@@ -24,6 +24,10 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.hamcrest:hamcrest-core:2.2'
+    implementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
+    implementation 'org.jacoco:jacoco-maven-plugin:0.8.8'
 }
 
 tasks.named('test') {
